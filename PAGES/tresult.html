@@ -20,7 +20,7 @@ body {
 .card-body{
   border: 0;
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1200px rgba(85, 218, 258, 5);
   background: white;
   margin-top: 10rem;
 }
@@ -34,13 +34,29 @@ body {
 .card-signin .card-body {
   padding: 2rem;
 }
+h5{
+font-size: 40px; letter-spacing:0.2em;
+  text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+  text-align:center;
+  margin-bottom:50px;
+}
+td{
+font-size: 20px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+th{
+font-size: 20px;
+}
+tr:hover
+{
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+}
+button:hover{
+box-shadow: 0 0 80px rgba(247,94,255,1);
+border-radius:2em;
 
+}
 </style>
-
-
-
-
-
 </head>
 <body>
 	<div class="container">
@@ -49,7 +65,7 @@ body {
 			<div class="col-sm-10">
 				<div class="card card-signin my-5">
 					<div class="card-body">
-						<h5 class="card-title text-center">Trainer Details</h5>
+						<h5>Trainer Details</h5>
 						<hr>
 						<div class="table-responsive-sm">
 							<table class="table table-striped">
@@ -97,8 +113,7 @@ body {
 									<td>4</td>
 								</tr>
 							</table>
-							<input type="submit" value="Login to send proposal"
-								class="btn btn-primary btn-block btn-lg color-b" tabindex="7">
+							<button class="btn btn-primary btn-block btn-lg color-b" tabindex="7" style="margin-top:50px;letter-spacing:0.2em;word-spacing:1em;">Login to send proposal</button>
 						</div>
 					</div>
 
