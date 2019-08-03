@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+button:hover{
+box-shadow: 0 0 80px rgba(247,94,255,1);
+border-radius:2em;
+}
+
+td{
+font-size: 20px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+th{
+font-size: 20px;
+}
+tr:hover
+{
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+}
+li :hover{
+background:linear-gradient(to right, white, #ADD8E6);
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row" style="height:120px;background: linear-gradient(to right, rgba(224,250,255,1), rgba(255,255,255,1));padding-top:10px;padding-bottom:20px;">
+<div class="col-md-3">
+<img src="logo.webp" style="height:107px;width:300px;">
+</div>
+<div class="col-md-9" >
+<ul class="nav nav-pills nav-justified">
+<li>
+  <a data-toggle="pill" href="#mycourse" style="font-size:30px;padding-left:100px;">My Courses</a>
+  </li>
+<li>
+   <a href="searching.html" style="font-size:30px;">Learn New</a></li>
+<li>
+<a data-toggle="pill" href="#notification" style="font-size:30px;">Notification</a>
+</li>
+<li><button onclick="location.href = 'login.html';" class="btn btn-primary" style="margin-left:300px;font-size:25px;letter-spacing:0.1em;"> LOGOUT </button></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+<div class="row" style="padding-top:50px;">
+<div class="col-md-2" style="text-align:center">
+<div style="margin-left:30px;">
+<img src="profile.png" style="height:257px;width:257px;">
+</div>
+
+<div >
+<h1>PROFILE</h1>
+<h1 style="font-size:20px; margin-top:20px;"><b>Helen Cho</b></h1>
+ 
+<h3><b>ID</b></h1>
+<h5>GRZLY17234</h5>
+<h3><b>Designation</b></h1>
+<h5>Beginner</h5>
+ 
+<h3><b>Office</b></h1>
+<h5>NYC,NY,USA</h5>
+ </div>
+ </div>
+ <div class="col-md-1"></div>
+ <div class="col-md-8">
+ 
+ 
+ 
+ <div class="tab-content">
+<div id="mycourse" class="tab-pane fade in active">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>Mentors &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Progress &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Start Date &nbsp &nbsp &nbsp &nbsp </th>
+
+								</tr>
+								<tr>
+									<td>Asis</td>
+
+									<td>Machine Learning</td>
+
+									<td>25%</td>
+
+									<td>24/09/2019</td>
+								</tr>
+								<tr>
+									<td>Senthil</td>
+
+									<td>Artificial Learning</td>
+
+									<td>45%</td>
+
+									<td>12/04/2014</td>
+								</tr>
+								<tr>
+									<td>Arvind</td>
+
+									<td>Spring</td>
+
+									<td>75%</td>
+
+									<td>17/04/2013</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+
+<div id="notification" class="tab-pane fade">
+
+     <div class="row">
+<br>
+<br>
+<br>
+
+
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>Mentors &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Duration(in months) &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Request Date &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Status &nbsp &nbsp &nbsp &nbsp </th>
+									
+
+								</tr>
+								<tr>
+									<td>Asis</td>
+
+									<td>Machine Learning</td>
+
+									<td>5</td>
+
+									<td>24/09/2019</td>
+										<td style="color:grey;">Pending</td>
+								</tr>
+								<tr>
+									<td>Senthil</td>
+
+									<td>Artificial Learning</td>
+
+									<td>3</td>
+
+									<td>12/04/2014</td>
+									<td style="color:green;">Accepted</td>
+								</tr>
+								<tr>
+									<td>Arvind</td>
+
+									<td>Spring</td>
+
+									<td>7</td>
+
+									<td>17/04/2013</td>
+								<td style="color:red;">Denied</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+ 
+ 
+ 
+ 
+</div>
+ 
+ 
+</div>
+<div class="col-md-1"></div>
+
+
+</div>
+
+<br><br>
+
+
+</body>
+</html>

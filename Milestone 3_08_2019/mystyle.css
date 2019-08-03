@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+body{
+  background: #007bff;
+  background: linear-gradient(to right, rgba(247,94,255,1), rgba(0,255,255,1));
+}
+#login-name{
+font-size: 65px;
+font-family: arabic typesetting;
+border-bottom-style: ridge;
+color:white;
+margin-top:30px;
+}
+#login{
+min-height:500px;
+box-shadow: -10px -10px 9px #33cc33;
+border-radius:1em;
+border-color:grey;
+border:5px;
+background: white;
+}
+.user{
+font-size: 29px;
+font-family: arabic typesetting;
+color: grey;
+margin-top:30px;
+}
+.user1{
+font-size: 29px;
+font-family: arabic typesetting;
+color: grey;
+margin-top:20px;
+}
+#iconn{
+background-color: #5cb85c;
+border-color: #4cae4c;
+	border-radius: 2em;
+color: white;
+}
+#iconn1{
+background-color: #5cb85c;
+border-color: #4cae4c;
+	border-radius: 2em;
+color: white;
+}
+#text1{
+
+	border-radius: 2em;
+	height: 40px;
+	margin-left:10px;
+}
+#text2{
+	border-radius: 2em;
+	height: 40px;
+	margin-left:10px;
+}
+.btn{
+	width: 50%;
+	float: left;
+	height: 40px;
+	font-size: 18px;
+}

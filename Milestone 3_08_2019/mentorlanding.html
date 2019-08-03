@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+button:hover{
+box-shadow: 0 0 80px rgba(247,94,255,1);
+border-radius:2em;
+}
+
+td{
+font-size: 20px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+th{
+font-size: 20px;
+}
+tr:hover
+{
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+}
+li :hover{
+background:linear-gradient(to right, white, #ADD8E6);
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row" style="height:120px;background: linear-gradient(to right, rgba(224,250,255,1), rgba(255,255,255,1));padding-top:10px;padding-bottom:20px;">
+<div class="col-md-3">
+<img src="logo.webp" style="height:107px;width:300px;">
+</div>
+<div class="col-md-9" >
+<ul class="nav nav-pills nav-justified">
+<li>
+  <a data-toggle="pill" href="#mycourse" style="font-size:30px;padding-left:100px;">Courses</a>
+  </li>
+  <li>
+  <a data-toggle="pill" href="#history" style="font-size:30px;padding-left:100px;">History</a>
+  </li>
+<li>
+   <a data-toggle="pill" href="#payment" style="font-size:30px;">Payments</a></li>
+<li>
+<a data-toggle="pill" href="#notification" style="font-size:30px;">Notification</a>
+</li>
+<li><button onclick="location.href = 'mentorlogin.html';" class="btn btn-primary" style="margin-left:300px;font-size:25px;letter-spacing:0.1em;"> LOGOUT </button></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+<div class="row" style="padding-top:50px;">
+<div class="col-md-2" style="text-align:center">
+<div style="margin-left:30px;">
+<img src="profile.png" style="height:257px;width:257px;">
+</div>
+
+<div >
+<h1>PROFILE</h1>
+<h1 style="font-size:20px; margin-top:20px;"><b>ASHIS</b></h1>
+ 
+<h3><b>ID</b></h1>
+<h5>GRZLY17234</h5>
+<h3><b>Phone no.</b></h1>
+<h5>1213454545</h5>
+ 
+<h3><b>Rating</b></h1>
+<h5>3.5</h5>
+ </div>
+ </div>
+ <div class="col-md-1"></div>
+ <div class="col-md-8">
+ 
+ 
+ 
+ <div class="tab-content">
+<div id="mycourse" class="tab-pane fade in active">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+									<th>Time Slot&nbsp &nbsp &nbsp &nbsp </th>
+									<th>Duration(in months) &nbsp &nbsp &nbsp &nbsp </th>
+									
+								</tr>
+								<tr>
+									
+
+									<td>Machine Learning</td>
+
+									<td>6:00-9:00 pm</td>
+
+									<td>4</td>
+								</tr>
+								<tr>
+							
+
+									<td>Artificial Learning</td>
+
+									<td>7:00-11:00 am</td>
+
+									<td>6</td>
+								</tr>
+								<tr>
+							
+
+									<td>Spring</td>
+
+									<td>11:00-2:00 pm</td>
+
+									<td>5</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+
+						
+						<div id="history" class="tab-pane fade">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>User &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Start Date &nbsp &nbsp &nbsp &nbsp </th>
+									<th>End Date &nbsp &nbsp &nbsp &nbsp </th>
+									<th>Amount credited &nbsp &nbsp &nbsp &nbsp </th>
+
+								</tr>
+								<tr>
+									<td>Subham</td>
+
+									<td>Machine Learning</td>
+
+
+									<td>24/09/2019</td>
+									<td>19/12/2019</td>
+									<td>2000</td>
+								</tr>
+								<tr>
+									<td>Sumit</td>
+
+									<td>Artificial Learning</td>
+
+									<td>12/04/2014</td>
+									<td>04/07/2014</td>
+									<td>3000</td>
+								</tr>
+								<tr>
+									<td>Shiva</td>
+
+									<td>Spring</td>
+									<td>17/04/2013</td>
+									<td>14/09/2013</td>
+								<td>2000</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+						
+						
+						
+<div id="payment" class="tab-pane fade">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>User &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Progress &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Start Date &nbsp &nbsp &nbsp &nbsp </th>
+									<th>End Date &nbsp &nbsp &nbsp &nbsp </th>
+									<th>Amount credited &nbsp &nbsp &nbsp &nbsp </th>
+
+								</tr>
+								<tr>
+									<td>Subham</td>
+
+									<td>Machine Learning</td>
+
+									<td>25%</td>
+
+									<td>24/09/2019</td>
+									<td>19/12/2019</td>
+									<td>2000</td>
+								</tr>
+								<tr>
+									<td>Sumit</td>
+
+									<td>Artificial Learning</td>
+
+									<td>45%</td>
+
+									<td>12/04/2014</td>
+									<td>04/07/2014</td>
+									<td>3000</td>
+								</tr>
+								<tr>
+									<td>Shiva</td>
+
+									<td>Spring</td>
+
+									<td>75%</td>
+
+									<td>17/04/2013</td>
+									<td>14/09/2013</td>
+								<td>2000</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+						
+						
+<div id="notification" class="tab-pane fade">
+
+     <div class="row">
+<br>
+<br>
+<br>
+
+
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>User &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Duration(in months) &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Request Date &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</th>
+									
+									<th>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Action  </th>
+									
+
+								</tr>
+								<tr>
+									<td>Kundan</td>
+
+									<td>Machine Learning</td>
+
+									<td>5</td>
+
+									<td>24/09/2019</td>
+										<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Accept</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Deny</a></td>
+								</tr>
+								<tr>
+									<td>Smith</td>
+
+									<td>Artificial Learning</td>
+
+									<td>3</td>
+
+									<td>12/04/2014</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Accept</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Deny</a></td>
+								</tr>
+								<tr>
+									<td>Deevansh</td>
+
+									<td>Spring</td>
+
+									<td>7</td>
+
+									<td>17/04/2013</td>
+								<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Accept</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Deny</a></td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+ 
+ 
+ 
+ 
+</div>
+ 
+ 
+</div>
+<div class="col-md-1"></div>
+
+
+</div>
+
+<br><br>
+
+
+</body>
+</html>

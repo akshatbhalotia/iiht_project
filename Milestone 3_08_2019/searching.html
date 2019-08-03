@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Search</title>
+
+</head>
+<style>
+
+input[type=select], select {
+  width: 48%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+}
+div {
+  border-radius: 2em;
+  background-color: #f2f2f2;
+  padding: 40px;
+  box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+  height:25rem;
+  width:40rem;
+  margin: 100px auto;
+  text-align:center;
+  }
+</style>
+<body>
+		
+		<div>
+			<h2 style="font-size: 35px; letter-spacing:0.2em;">Courses And Timings</h2>
+							
+			<label>Select Time:</label>
+			<br>
+				<select>
+				<option value="" disabled selected>Select your option</option>
+					<option>6:00-7:30am</option>
+					<option>8:00-9:30am</option>
+					<option>6:00-7:30pm</option>
+					<option>8:00-9:30am</option>
+					</select> <br />
+					<br/>
+				<label>Select Technology:</label> 
+				<br>
+				<select>
+				<option value="" disabled selected>Select your option</option>
+					<option>Spring Fundamentals</option>
+					<option>Machine Learning</option>
+					<option>Big Data</option>
+					<option>Asp.Net</option>
+				</select> <br ><br>
+				<input type="submit" value="Search" onclick="location.href = 'tresultaftersignin.html';">
+		</div>
+				
+
+
+</body>
+</html>

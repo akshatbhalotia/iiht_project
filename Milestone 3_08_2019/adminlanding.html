@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+button:hover{
+box-shadow: 0 0 80px rgba(247,94,255,1);
+border-radius:2em;
+}
+
+td{
+font-size: 20px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+th{
+font-size: 20px;
+}
+tr:hover
+{
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+}
+li :hover{
+background:linear-gradient(to right, white, #ADD8E6);
+box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row" style="height:120px;background: linear-gradient(to right, rgba(224,250,255,1), rgba(255,255,255,1));padding-top:10px;padding-bottom:20px;">
+<div class="col-md-3">
+<img src="logo.webp" style="height:107px;width:300px;">
+</div>
+<div class="col-md-9" >
+<ul class="nav nav-pills nav-justified">
+<li>
+  <a data-toggle="pill" href="#technology" style="font-size:30px;padding-left:100px;">Technology</a>
+  </li>
+<li>
+   <a data-toggle="pill" href="#user" style="font-size:30px;">Users</a></li>
+<li>
+<a data-toggle="pill" href="#mentor" style="font-size:30px;">Mentors</a>
+</li>
+<li>
+<a data-toggle="pill" href="#payment" style="font-size:30px;">Payment</a>
+</li>
+<li><button onclick="location.href = 'adminlogin.html';"  class="btn btn-primary" style="margin-left:300px;font-size:25px;letter-spacing:0.1em;"> LOGOUT </button></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+<div class="row" style="padding-top:50px;">
+<div class="col-md-2" style="text-align:center">
+<div style="margin-left:30px;">
+<img src="profile.png" style="height:257px;width:257px;">
+</div>
+
+<div >
+<h1>Welcome Admin</h1>
+<h1 style="font-size:20px; margin-top:20px;"><b>Akshat</b></h1>
+ 
+<h3><b>ID</b></h1>
+<h5>GRZLY17234</h5>
+
+<h3><b>Email ID</b></h1>
+<h5>akshat.bhalotia@cognizant.com</h5>
+<h3><b>Phone no.</b></h1>
+<h5>1213454545</h5>
+ 
+ </div>
+ </div>
+ <div class="col-md-1"></div>
+ <div class="col-md-8">
+ 
+ 
+ 
+ <div class="tab-content">
+<div id="technology" class="tab-pane fade in active">
+<div class="row">
+
+<br>
+<br>
+<br>
+<div class="col-md-3"></div>
+<div class="col-md-6">
+
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+									<th>Technology</th>
+									<th>&nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbspAction</th>	
+								</tr>
+								<tr>
+									<td>Machine Learning</td>
+									<td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Remove</a></td>
+								</tr>
+								<tr>
+							
+
+									<td>Artificial Learning</td>
+									<td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Remove</a></td>
+								</tr>
+								<tr>
+							
+
+									<td>Spring</td>
+									<td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Remove</a></td>
+								</tr>
+								<tr>
+								<td colspan="2" style="text-align:center;">
+								<button class="btn btn-primary" style="width:250px;font-size:15px;" >ADD  New  Technology</button>
+								
+								</td>
+								</tr>
+								
+							</table>
+						</div>
+					</div>
+						<div class="col-md-3"></div>
+							
+						</div>
+						</div>
+ 
+ 
+ 
+ 
+ 
+ <div id="user" class="tab-pane fade">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>User &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Duration(in months) &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Start Date &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Status &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Action &nbsp &nbsp &nbsp &nbsp </th>
+									
+									
+									
+									
+
+								</tr>
+								<tr>
+									<td>Subham</td>
+
+									<td>Machine Learning</td>
+
+									<td>5</td>
+
+									<td>24/09/2019</td>
+									<td style="color:red;">Block</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								<tr>
+									<td>Sumit</td>
+
+									<td>Artificial Learning</td>
+
+									<td>3</td>
+
+									<td>12/04/2014</td>
+								<td style="color:green;">Active</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								<tr>
+									<td>Deevansh</td>
+
+									<td>Spring</td>
+
+									<td>7</td>
+
+									<td>17/04/2013</td>
+								<td style="color:green;">Active</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+
+<div id="mentor" class="tab-pane fade">
+<div class="row">
+
+
+<br>
+<br>
+<br>
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>Mentor&nbsp &nbsp &nbsp &nbsp </th>
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+									<th>Payment &nbsp &nbsp &nbsp &nbsp </th>
+									<th>Rating &nbsp &nbsp &nbsp &nbsp </th>
+									<th>Status &nbsp &nbsp &nbsp &nbsp </th>
+									<th>Action &nbsp &nbsp &nbsp &nbsp </th>
+								</tr>
+								<tr>
+									<td>Senthil</td>
+
+									<td>Machine Learning</td>
+
+									<td>2500</td>
+
+									<td>2.6</td>
+									<td style="color:green;">Active</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								<tr>
+									<td>Arvind</td>
+
+									<td>Artificial Learning</td>
+
+									<td>3000</td>
+
+									<td>4.2</td>
+									<td style="color:red;">Block</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								<tr>
+									<td>Asis</td>
+
+									<td>Spring</td>
+
+									<td>4200</td>
+
+									<td>3.5</td>
+									<td style="color:green;">Active</td>
+									<td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-ok"></span> Activate</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Block</a></td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+						
+						
+<div id="payment" class="tab-pane fade">
+
+     <div class="row">
+<br>
+<br>
+<br>
+
+
+<div class="table-responsive-sm">
+							<table class="table table-striped">
+
+								<tr>
+
+									<th>Mentor &nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Technology&nbsp &nbsp &nbsp &nbsp </th>
+
+									<th>Fees &nbsp &nbsp &nbsp &nbsp </th>
+									
+									<th>Commission &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </th>
+								
+								</tr>
+								<tr>
+									<td>Asis</td>
+
+									<td>Machine Learning</td>
+
+									<td>3000</td>
+
+									<td>9.5%</td>
+								</tr>
+								<tr>
+									<td>Arvind</td>
+
+									<td>Artificial Learning</td>
+
+									<td>4200</td>
+
+									<td>11%</td>
+									</tr>
+								<tr>
+									<td>Senthil</td>
+
+									<td>Spring</td>
+
+									<td>2500</td>
+
+									<td>13.3%</td>
+								</tr>
+								
+							</table>
+						</div>
+						</div>
+						</div>
+ 
+ 
+ 
+ 
+</div>
+ 
+ 
+</div>
+<div class="col-md-1"></div>
+
+
+</div>
+
+<br><br>
+
+
+</body>
+</html>

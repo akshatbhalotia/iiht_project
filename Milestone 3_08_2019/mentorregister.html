@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+  <title>Mentor Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style type="text/css">
+  
+body{
+  background: -moz-linear-gradient(45deg, rgba(247,94,255,1) 0%, rgba(0,255,255,1) 100%); 
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(247,94,255,1)), color-stop(100%, rgba(0,255,255,1))); 
+background: -webkit-linear-gradient(45deg, rgba(247,94,255,1) 0%, rgba(0,255,255,1) 100%); 
+background: -o-linear-gradient(45deg, rgba(247,94,255,1) 0%, rgba(0,255,255,1) 100%); 
+background: -ms-linear-gradient(45deg, rgba(247,94,255,1) 0%, rgba(0,255,255,1) 100%); 
+background: linear-gradient(45deg, rgba(247,94,255,1) 0%, rgba(0,255,255,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#F75EFF',GradientType=1 );
+}
+h1{
+  font-size: 60px; letter-spacing:0.5em;
+  text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+  margin-bottom:50px;
+}
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=date]:focus,input[type=number]:focus {
+  box-shadow: 0 0 50px rgba(81, 203, 238, 1);
+   border-radius: 2rem;
+   
+  }
+  button:hover
+  {
+  box-shadow: 0 0 80px rgba(81, 203, 238, 1);
+  }
+
+
+
+
+</style>
+<script language="javascript">
+var rowNo = 0;
+        function addRow(tableID) {
+ 
+            var table = document.getElementById(tableID);
+ rowNo++;
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+ 
+            var cell1 = row.insertCell(0);
+            var element1 = document.createElement("input");
+            element1.type = "checkbox";
+            element1.name="chkbox[]";
+	    element1.style.width="80px";
+            cell1.appendChild(element1);	
+ 
+            var cell2 = row.insertCell(1);
+            cell2.innerHTML =  rowNo;
+			cell2.style.textAlign="center";
+ 
+           var cell3 = row.insertCell(2);
+
+	 
+            var element2 = document.createElement("input");
+            element2.type = "text";
+            element2.name = "txtbox[]";
+		element2.style.color="#000000";
+            cell3.appendChild(element2);
+	
+ 
+ 
+var cell4 = row.insertCell(3);
+            cell4.innerHTML =  'Course name';
+        }
+ 
+        function deleteRow(tableID) {
+            try {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+ 
+            for(var i=0; i<rowCount; i++) {
+                var row = table.rows[i];
+                var chkbox = row.cells[0].childNodes[0];
+                if(null != chkbox && true == chkbox.checked) {
+                    table.deleteRow(i);
+                    rowCount--;
+                    i--;
+                }
+ 
+ 
+            }
+            }catch(e) {
+                alert(e);
+            }
+        }
+ 
+    </script>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+</head>
+<body>
+
+<!-- if you want to create login page and register page together in one page ...you have to only chnage his name...that's it...                 -->
+<div class="container" style="margin-top:5%;">
+  <div class="row">
+    <div class="col-md-3" > </div>
+<div class="col-md-6">
+  
+<h1 class="text-center text-success"> REGISTER</h1> 				<!-- need to be modified -->
+<br/>
+
+<div class="col-sm-12">
+<br/>
+
+
+  <div class="tab-content">
+    <div class="tab-pane fade in active">
+      
+<form action="#" onclick="return Validate()">
+<div>
+  <div class="form-group">
+    <label for="firstname" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">First Name:</label>
+    <input type="text" placeholder="Enter your First Name" class="form-control"  required>
+  </div>
+  
+  <div class="form-group">
+    <label for="lastname" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Last Name;</label>
+    <input type="text" name="lastname" placeholder="Enter your Last Name"class="form-control"  required>
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="email" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Email address:</label>
+    <input type="email" placeholder="Enter your Email ID"class="form-control"  required>
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="email" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Add Technologies:</label>
+	<br>
+								<INPUT type="button" style="background-color:#337ab7;color:#f5f5f5;font-size:17px" value="Add Row" onclick="addRow('dataTable')" />
+ 
+								<INPUT type="button" style="background-color:#337ab7;color:#f5f5f5;font-size:17px" value="Delete Row" onclick="deleteRow('dataTable')" />
+ 
+								<TABLE style="background:#C0C0C0;color:#FFFFFF;" id="dataTable" width="350px" border="1">
+									<TR>
+										<TD style="text-align:center"><INPUT type="checkbox" name="chk"/></TD>
+										<TD> 0 </TD>
+										<TD> <INPUT style="background:white; color:#000000" type="text" /> </TD>
+										<TD> Course name </TD>
+									</TR>
+								</TABLE>
+  
+  </div>
+
+
+  <div class="form-group">
+    <label for="contact" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Contact No:</label>
+    <input type="number" placeholder="Enter your Contact No." class="form-control" required>
+  </div>
+
+
+  <div class="form-group">
+    <label for="pwd" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Password:</label>
+    <input type="password" placeholder="Choose any Password"class="form-control" id="txtPassword" required >
+  </div>
+
+  <div class="form-group">
+    <label for="pwd" style="font-size: 15px; letter-spacing:0.2em;word-spacing:0.5em">Confirm Password:</label>
+    <input type="password" placeholder="Confirm your Password" class="form-control" id="txtConfirmPassword" required>
+  </div>
+</div>
+
+<div style="text-align:center;margin-top:30px;">
+  <button type="submit"  class="btn btn-success" style="text-align: center;
+  font-size: 22px;
+  color: black;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 2rem;
+   background-image: linear-gradient(to right, #d7eef5 , #ceede3);"><b>Submit</b></button>
+</div>
+
+</form>
+<br/>
+
+
+
+    </div>
+   </div>
+  </div>
+</div>
+ <div class="col-md-3" > </div>
+</div>
+</div>
+</body>
+</html>
