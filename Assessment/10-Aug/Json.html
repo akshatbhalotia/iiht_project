@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Looping through arrays inside arrays </p>
+
+<p id="demo"></p>
+
+<script>
+var myObj, i, j, x = "";
+myObj = {
+  "name":"John",
+  "age":30,
+  "subject": [
+    {"name":"Science", "chapter":["Atom", "ELement", "Molecules"]},
+    {"name":"Maths", "chapter":["Trignometry", "Calculus", "Algerbra"]},
+    {"name":"Computer", "chapter":["C++", "C", "Java"]}
+  ]
+}
+x+="<h1>Your NAME is :   "+myObj.name+"<h1>";
+x+="<h1>Your AGE is :   "+myObj.age+"<h1>";
+
+for (i in myObj.subject) {
+  x += "<h2>" + myObj.subject[i].name + "</h2>";
+  for (j in myObj.subject[i].chapter) {
+    x += myObj.subject[i].chapter[j] + "<br>";
+  }
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
