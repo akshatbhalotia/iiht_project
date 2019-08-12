@@ -1,0 +1,36 @@
+--------------EmployeeService.java-----------
+
+public int getmaxsalary();
+
+
+
+
+--------------EmployeeServiceImpl.java-----------
+
+
+	public int getmaxsalary() {
+		// TODO Auto-generated method stub
+		int max=0;
+		  for(int i=0;i<emps.size();i++)
+		  {
+			  if(max<=emps.get(i).getSalary())
+			  {
+				  
+				  max=emps.get(i).getSalary();
+			  }
+		  }
+		  
+		  return max;
+		
+	}
+	
+	
+--------------EmployeeController.java-----------
+
+
+	 @GetMapping(value="/getmaxsalary", headers="Accept=application/json")
+	 public int getmaxsalay() {	
+		int max= empService.getmaxsalary();
+	return max;
+	  
+	 }

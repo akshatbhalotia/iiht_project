@@ -1,0 +1,32 @@
+--------------EmployeeService.java-----------
+
+public void LcreateEmployee(Employee emp);
+
+
+
+
+
+--------------EmployeeServiceImpl.java-----------
+
+	public void LcreateEmployee(Employee emp) {
+		// TODO Auto-generated method stub
+		emps.add(emp);
+	}
+
+	
+	
+	
+--------------EmployeeController.java-----------
+
+
+	 @PostMapping(value="/lcreate",headers="Accept=application/json")
+	 public ResponseEntity<Void> createEmployee(@RequestBody List<Employee> empl, UriComponentsBuilder ucBuilder){
+	     System.out.println("Creating Employee "+empl);
+	     for(Employee emp:empl)
+	     {
+	     empService.createEmployee(emp);
+	     }
+	     //HttpHeaders headers = new HttpHeaders();
+	     //headers.setLocation(ucBuilder.path("/emp/{id}").buildAndExpand(emp.getId()).toUri());
+	     return new ResponseEntity<Void>(HttpStatus.CREATED);
+	 }
